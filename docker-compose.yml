@@ -1,0 +1,19 @@
+# PARA SUBIR:
+# docker-compose up
+
+# PARA DESCER:
+# docker-compose down --remove-orphans
+
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 12345678
+
+    ports:
+      - 27017:27017
