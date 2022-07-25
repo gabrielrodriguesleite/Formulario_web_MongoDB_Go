@@ -1,5 +1,7 @@
 package main
 
+//go:generate sh ./pretest.sh
+
 import (
 	"FORMULARIO_WEB_MONGODB_GO/handlers"
 	"log"
