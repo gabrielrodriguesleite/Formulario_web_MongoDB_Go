@@ -25,6 +25,6 @@ func SubscriptionHandler(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	// DEFINE O METODO GET
+	// DEFINE O FRONTEND COM O TEMPLATE DE FORMULARIO
 	http.ServeFile(w, r, "handlers/templates/subscription_form.html")
 }
